@@ -15,7 +15,7 @@
 		5A081D014D20718643334BF1 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = EE1EFD7E1EFAEB821284DA53 /* PrivacyInfo.xcprivacy */; };
 		6C9B1E0B422A52401AEB6DFF /* Pods_ELearningApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ABE209A0EEE76A1300C713D /* Pods_ELearningApp.framework */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		CA7C78F72BED1F6D0026C408 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA7C78F62BED1F6D0026C408 /* GoogleService-Info.plist */; };
+		CA0FE1432C10BA2400861ED9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA0FE1422C10BA2400861ED9 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,7 @@
 		6ABE209A0EEE76A1300C713D /* Pods_ELearningApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ELearningApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ELearningApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-ELearningApp-ELearningAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELearningApp-ELearningAppTests.release.xcconfig"; path = "Target Support Files/Pods-ELearningApp-ELearningAppTests/Pods-ELearningApp-ELearningAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		CA7C78F62BED1F6D0026C408 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CA0FE1422C10BA2400861ED9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		EE1EFD7E1EFAEB821284DA53 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = ELearningApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,7 +123,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				CA7C78F62BED1F6D0026C408 /* GoogleService-Info.plist */,
+				CA0FE1422C10BA2400861ED9 /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* ELearningApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* ELearningAppTests */,
@@ -251,7 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				CA7C78F72BED1F6D0026C408 /* GoogleService-Info.plist in Resources */,
+				CA0FE1432C10BA2400861ED9 /* GoogleService-Info.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				5A081D014D20718643334BF1 /* PrivacyInfo.xcprivacy in Resources */,
 			);
@@ -619,10 +619,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -705,10 +702,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
