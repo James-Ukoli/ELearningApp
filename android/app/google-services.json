@@ -7,12 +7,25 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:386566430920:android:def16cda812429e993c5fd",
+        "mobilesdk_app_id": "1:386566430920:android:13f19471fd3998c493c5fd",
         "android_client_info": {
           "package_name": "com.elearningapp"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "386566430920-vcebvqi3a8f7ugp77mqd5c2p4i5gof08.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.elearningapp",
+            "certificate_hash": "678b48347a9b87008aa60f44e91d87cf5911b102"
+          }
+        },
+        {
+          "client_id": "386566430920-jkensjr5uql58fnq58ruum7aa03etuc3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBT7OiQ2mjT54mZ8k8rO2kOJzBMjG_P_AQ"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "386566430920-jkensjr5uql58fnq58ruum7aa03etuc3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "386566430920-obp5g34p45p1ojpp4j3694dlasvtcr7g.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.ELearningApp"
+              }
+            }
+          ]
         }
       }
     }

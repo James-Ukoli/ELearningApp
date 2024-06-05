@@ -1,5 +1,9 @@
 import { Image, StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import React from 'react'
+import {
+  GoogleSignin,
+  statusCodes,
+} from '@react-native-google-signin/google-signin';
 import type {PropsWithChildren} from 'react';
 import { useFonts } from 'expo-font';
 import * as Font from 'expo-font';
@@ -24,6 +28,7 @@ function consoleFacebookfunction(){
 
 const symbol = "</>"
 
+//client id: 386566430920-jkensjr5uql58fnq58ruum7aa03etuc3.apps.googleusercontent.com
 
 function Login(): React.JSX.Element {
   return (
