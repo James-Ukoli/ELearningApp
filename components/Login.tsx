@@ -1,26 +1,12 @@
 import { Image, StyleSheet, Text, View, TouchableOpacity } from 'react-native'
-import React from 'react'
-import {
-  GoogleSignin,
-  statusCodes,
-} from '@react-native-google-signin/google-signin';
-import type {PropsWithChildren} from 'react';
-import { useFonts } from 'expo-font';
-import * as Font from 'expo-font';
+import React, { useEffect, useState } from 'react'
+import { GoogleSignin } from '@react-native-google-signin/google-signin';
 
-// Load fonts
-// async function loadFonts() {
-//   await Font.loadAsync({
-//     'Roboto': require('path/to/Roboto.ttf'),
-//     // Add other fonts as needed
-//   });
-// }
+GoogleSignin.configure({
+  webClientId: '386566430920-jkensjr5uql58fnq58ruum7aa03etuc3.apps.googleusercontent.com',
+});
 
-// Call loadFonts function somewhere in your code, such as in your App component
-
-function consoleGogglefunction(){
-  console.log("The google button got pressed!")
-}
+import auth from '@react-native-firebase/auth';
 
 function consoleFacebookfunction(){
   console.log("The Facebook Button got pressed!")
@@ -31,6 +17,23 @@ const symbol = "</>"
 //client id: 386566430920-jkensjr5uql58fnq58ruum7aa03etuc3.apps.googleusercontent.com
 
 function Login(): React.JSX.Element {
+
+
+  async function onGoogleButtonPress() {
+    // Check if your device supports Google Play
+   const hasPlaySer = await GoogleSignin.hasPlayServices({ showPlayServicesUpdateDialog: true });
+    // Get the users ID token
+    console.log(hasPlaySer)
+   // const { idToken } = await GoogleSignin.signIn();
+   // console.log("token====>",idToken)
+  
+    // Create a Google credential with the token
+    //const googleCredential = auth.GoogleAuthProvider.credential(idToken);
+   // console.log("google credetials",googleCredential)
+  
+    // Sign-in the user with the credential
+    //return auth().signInWithCredential(googleCredential);
+  }
   return (
     <View style={{display: 'flex', alignItems: "center"}}>
       <Image source={require('../assets/images/home.png')} style={{ width: 250, height: 500, marginTop: 70, objectFit: "contain", borderWidth: 5}}/>
@@ -42,7 +45,7 @@ function Login(): React.JSX.Element {
         </Text>
         <Text style={{textAlign: "center", color: "white", marginTop: 15}}>your Ultimate Programming Learning Box</Text>
         {/* Sign in Buttons Google and Facebook  */}
-        <TouchableOpacity onPress={consoleGogglefunction}>
+        <TouchableOpacity onPress={onGoogleButtonPress}>
           <View style={styles.loginButton}>
             <Image source={require('../assets/images/google.png')} style={{width: 40, height: 40}}/>
             <Text>Sign-in with Google</Text>

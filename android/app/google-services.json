@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "386566430920-1dg6jevgnkkgpmumigu76la5bqfq0jkb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.elearningapp",
+            "certificate_hash": "9791228c8d348bd98262af1e117aba1edf01fdae"
+          }
+        },
+        {
           "client_id": "386566430920-vcebvqi3a8f7ugp77mqd5c2p4i5gof08.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
